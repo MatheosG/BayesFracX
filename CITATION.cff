@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use BayesFracX, please cite this software."
+type: software
+title: "BayesFracX"
+authors:
+  - family-names: Giakoumi
+    given-names: Matheos
+  - family-names: Chang
+    given-names: Bernard C.
+  - family-names: Prodanović
+    given-names: Maša
+repository-code: "https://github.com/MatheosG/BayesFracX"
+license: MIT
+version: 1.0.0
