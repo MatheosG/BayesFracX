@@ -1,0 +1,56 @@
+# =============================================================================
+# BayesFracX .gitignore
+# =============================================================================
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python/package build files
+build/
+dist/
+*.egg-info/
+
+# Test/cache files
+.pytest_cache/
+.coverage
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+
+# LOCAL BAYESFRACX DEVELOPMENT FILES
+
+# Generated/local results
+results/
+results_*/
+
+# Manuscript and development material
+manuscript/
+draft/
+
+# Large Digital Porous Media Portal material
+DPMP/
+
+# Local post-processing/development script
+plot_after.py
+BFXtool.md
+
+# DATA
+
+# Ignore everything in data/ except the two synthetic validation volumes
+data/*
+
+!data/synthetic_3fractures.tif
+!data/synthetic_15fractures.tif

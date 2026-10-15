@@ -1,0 +1,9 @@
+connected-components-3d==4.0.0
+edt==3.1.2
+numpy==2.4.6
+pyvista==0.48.4
+scikit-image==0.26.0
+scikit-learn==1.9.0
+scipy==1.18.0
+tifffile==2026.7.31
+vtk==9.6.2

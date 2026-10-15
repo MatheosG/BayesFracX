@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BayesFracX · Publication viewer</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/vtk.js@32.12.0/vtk.js"
+    integrity="sha384-U0Cv6UWkfWyxn6BDQKdE+ektOBpq1eikqdeN912/RKoeaH57UNeLzqKXcTgjaGPT"
+    crossorigin="anonymous"></script>
+  <script defer src="./viewer.js"></script>
+</head>
+<body>
+  <main aria-label="BayesFracX publication viewer">
+    <header>
+      <img class="logo" src="./assets/BayesFracX_logo.png" alt="BayesFracX">
+      <p class="description">View the reconstructed fracture surfaces and spatial aperture distributions accompanying the BayesFracX study.</p>
+    </header>
+    <div class="selectors">
+      <label>Dataset
+        <select id="dataset" disabled aria-label="Dataset"></select>
+      </label>
+      <label>Visualization
+        <select id="visualization" disabled aria-label="Visualization"></select>
+      </label>
+    </div>
+    <div class="viewer-frame" aria-busy="true">
+      <div id="viewer" tabindex="0" role="region" aria-label="Interactive 3D fracture viewer" aria-describedby="controls"></div>
+      <canvas id="fracture-labels" aria-hidden="true"></canvas>
+      <p id="status" role="status" aria-live="polite">Loading viewer…</p>
+    </div>
+    <p id="controls">Drag to rotate · Scroll to zoom · Shift + drag to pan</p>
+    <footer>
+      <!-- When available, wrap each citation in an <a> with its actual DOI or entry URL, and remove the adjacent link-pending span. -->
+      <p><strong>Companion publication:</strong> Giakoumi, Chang &amp; Prodanović.
+        <cite>BayesFracX: A Bayesian clustering-based algorithm for individual fracture extraction and DFN-ready characterization from 3D CT images</cite>.
+        <span class="pending">Publication link pending.</span></p>
+      <p><strong>Digital Porous Media Portal entry:</strong>
+        <cite>BayesFracX: Processed 3D CT fracture volumes and extraction results</cite>.
+        <span class="pending">Entry link pending.</span></p>
+    </footer>
+    <noscript>Enable JavaScript to view the results.</noscript>
+  </main>
+</body>
+</html>

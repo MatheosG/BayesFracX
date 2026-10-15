@@ -1,0 +1,36 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #162b46; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { display: flex; flex-direction: column; min-height: 100dvh; width: min(1440px, 100%); margin: 0 auto; padding: 26px 32px 18px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.logo { display: block; width: min(310px, 55vw); height: auto; }
+.description { max-width: 520px; margin: 0; color: #506174; font-size: 14px; line-height: 1.6; }
+.selectors { display: flex; gap: 28px; margin-bottom: 18px; }
+label { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+select { font: inherit; color: inherit; padding: 9px 34px 9px 12px; min-width: 190px; border: 1px solid #bac4ce; border-radius: 4px; background: #fff; }
+select:disabled { color: #737d89; }
+select:focus-visible, #viewer:focus-visible, footer a:focus-visible { outline: 2px solid #1b659a; outline-offset: 3px; }
+.viewer-frame { position: relative; flex: 1; min-height: 380px; border: 1px solid #d4dce3; }
+#viewer { position: absolute; inset: 0; overflow: hidden; touch-action: none; }
+#viewer canvas { display: block; }
+#fracture-labels { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#status { position: absolute; inset: 0; display: grid; place-content: center; margin: 0; padding: 32px; text-align: center; font-size: 14px; color: #506174; background: rgba(255,255,255,.94); pointer-events: none; }
+#status[hidden] { display: none; }
+#controls { margin: 12px 0 0; text-align: center; color: #617083; font-size: 13px; }
+footer { margin-top: 20px; padding-top: 12px; border-top: 1px solid #e2e7ec; color: #506174; font-size: 12px; line-height: 1.6; }
+footer p { margin: 0; }
+footer p + p { margin-top: 6px; }
+footer strong { color: #162b46; font-weight: 600; }
+footer cite { font-style: normal; }
+footer a { color: #1b659a; text-underline-offset: 3px; }
+.pending { color: #617083; white-space: nowrap; }
+noscript { display: block; text-align: center; margin-top: 16px; }
+@media (max-width: 650px) {
+  main { padding: 18px 14px; }
+  header { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+  .selectors { flex-direction: column; gap: 12px; }
+  label { display: grid; grid-template-columns: 100px minmax(0, 1fr); }
+  select { width: 100%; min-width: 0; }
+  .viewer-frame { min-height: 360px; }
+  #controls { font-size: 12px; }
+}
