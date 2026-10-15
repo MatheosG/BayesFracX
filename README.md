@@ -185,9 +185,11 @@ Use the same inputs, code version, dependency versions, and seed when comparing 
 
 ## Code and data availability
 
-**Code:** https://github.com/MatheosG/BayesFracX
+**Source code:** https://github.com/MatheosG/BayesFracX
 
-**Data:** https://doi.org/10.17612/7z7r-v755
+**Archived software (v1.0.0):** https://doi.org/10.5281/zenodo.23405829
+
+**Experimental data and results:** https://doi.org/10.17612/7z7r-v755
 
 ## Citation
 
@@ -205,6 +207,26 @@ Giakoumi, M., Chang, B. C., and Prodanović, M. (2026).
   year    = {2026},
   doi     = {TO_BE_ADDED},
   url     = {TO_BE_ADDED}
+}
+```
+
+## Software citation
+
+The BayesFracX v1.0.0 release is permanently archived in Zenodo.
+
+Giakoumi, M., Chang, B. C., and Prodanović, M. (2026).
+*BayesFracX* (Version 1.0.0) [Computer software].
+Zenodo. https://doi.org/10.5281/zenodo.23405829
+
+```bibtex
+@misc{GiakoumiEtAl2026BayesFracXSoftware,
+  author       = {Giakoumi, Matheos and Chang, Bernard C. and Prodanovi{\'c}, Ma{\v{s}}a},
+  title        = {BayesFracX},
+  year         = {2026},
+  version      = {1.0.0},
+  howpublished = {Zenodo},
+  note         = {Computer software},
+  doi          = {10.5281/zenodo.23405829}
 }
 ```
 

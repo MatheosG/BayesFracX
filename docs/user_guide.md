@@ -626,16 +626,20 @@ Repeat the fifteen-fracture reference case with `sampling_percent=5`, `10`, and 
 | 10 | 243,716 | 15 | 0 | 0.00 |
 | 15 | 365,574 | 16 | 3,657 | 1.00 |
 
+
 ## 8. Citation and archived data
 
 If BayesFracX is used in published work, cite the accompanying
-Computers & Geosciences article. The segmented experimental inputs and
+[JOURNAL NAME] article when available and the archived software
+version used in the study. The segmented experimental inputs and
 corresponding BayesFracX outputs used in the article are archived in the
 Digital Porous Media Portal and should also be cited when those data are used.
 
-Article: [Article DOI]
+Article: [Article DOI — pending publication]
 
-[\[Dataset DOI\]](https://doi.org/10.17612/7z7r-v755)
+Software (v1.0.0): https://doi.org/10.5281/zenodo.23405829
+
+Dataset: https://doi.org/10.17612/7z7r-v755
 
 Complete citation information and BibTeX entries are provided in the
 repository README.
